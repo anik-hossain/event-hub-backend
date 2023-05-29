@@ -1,0 +1,27 @@
+{
+    "name": "event-hub-backend",
+    "version": "1.0.0",
+    "repository": "https://github.com/anik-hossain/event-hub-backend.git",
+    "author": "Anik Hossain",
+    "license": "MIT",
+    "scripts": {
+        "start": "node server.js",
+        "start:dev": "SET NODE_ENV=development&&nodemon node server.js",
+        "start:prod": "SET NODE_ENV=production&&nodemon node server.js"
+    },
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "module-alias": "^2.2.2",
+        "mongoose": "^7.2.1",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    },
+    "_moduleAliases": {
+        "@root": "."
+    }
+}
