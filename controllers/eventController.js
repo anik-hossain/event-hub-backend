@@ -20,6 +20,7 @@ exports.getSlots = async (req, res, _) => {
     res.status(200).json({
         message: 'Slots by date',
         slots: updatedData[0].slots,
+        currentTime: new Date(),
     });
 };
 
