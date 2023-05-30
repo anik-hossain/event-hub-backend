@@ -10,6 +10,7 @@ require('module-alias/register');
 
 const AppError = require('@root/utils/AppError');
 const errorController = require('@root/controllers/errorController');
+const eventRoutes = require('@root/routes/eventRoutes');
 
 /**
  * Create Application
@@ -34,7 +35,7 @@ app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
 
 // API Routes
-// app.use('/api/v1/', publicRoutes);
+app.use('/api/v1/', eventRoutes);
 
 // 404 Route
 app.all('*', (req, res, next) => {

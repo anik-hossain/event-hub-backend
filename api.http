@@ -1,0 +1,8 @@
+###
+GET http://localhost:4000/api/v1/events/05-30-2023
+content-type: application/json
+
+
+###
+PUT http://localhost:4000/api/v1/events/create-slots
+content-type: application/json
